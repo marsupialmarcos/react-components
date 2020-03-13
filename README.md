@@ -137,11 +137,11 @@ var App = () => (
 
 **Class components**
 
-Up until now we have been working with stateless functional components which are great when all you need to do is receive props and render JSX. Recall that props are immutable and cannot be changed once passed in from a parent. If an entire React application is created with only functional stateless components, it would not be very different from a static HTML page.
+Up until now we have been working with *stateless functional components* which are great when all you need to do is receive *props* and render JSX. Recall that *props* are immutable and cannot be changed once passed in from a parent. If an entire React application is created with only functional stateless components, it would not be very different from a static HTML page.
 
-To make applications interactive, our components need to do more than simply receive props. Sometimes components need to store data that cannot be explicitly passed in as props and re-render this data changes.
+To make applications interactive, our components need to do more than simply receive *props.* Sometimes components need to store data that cannot be explicitly passed in as *props* and re-render this data changes.
 
-React makes this possible with class components. To demonstrate this, we'll refactor each <li> of our TodoList into a TodoListItem class component:
+React makes this possible with **class components.** To demonstrate this, we'll refactor each *li* of our *TodoList* into a *TodoListItem* class component:
 
 ```javascript
 // A class component can be defined as an ES6 class
@@ -184,9 +184,9 @@ var TodoList = (props) => (
 
 **State**
 
-We're going to add a feature to our TodoListItem that toggles a crossed-out style when its <li> is clicked. For this to be possible, each TodoListItem must know whether or not it should currently display as crossed out. Additionally, this information changes over time as users click the item, so there is no way to model this data as an immutable prop. Instead, this data will live on the state object of the TodoListItem component.
+We're going to add a feature to our *TodoListItem* that toggles a crossed-out style when its li is clicked. For this to be possible, each *TodoListItem* must know whether or not it should currently display as crossed out. Additionally, this information changes over time as users click the item, so there is no way to model this data as an immutable prop. Instead, this data will live on the *state* object of the *TodoListItem* component.
 
-state is only available on class components. We can initialize a class component's state in its constructor. To update the state, invoke this.setState. Whenever this.setState is called, the component re-renders.
+*state* is only available on class components. We can initialize a class component's state in its constructor. To update the state, invoke *this.setState.* Whenever *this.setState* is called, the component re-renders.
 
 ```javascript
 class TodoListItem extends React.Component {
@@ -222,4 +222,4 @@ class TodoListItem extends React.Component {
   }
 }
 ```
-* Make it so that when your mouse hovers over a *<li>* of a *GroceryListItem* that it turns bold
+* Make it so that when your mouse hovers over a *li* of a *GroceryListItem* that it turns bold
