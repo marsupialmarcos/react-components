@@ -74,7 +74,7 @@ var App = () => (
 );
 ```
 * Create React components for the 2 items in your grocery list. For example, if your grocery list contains "cucumbers" and "kale", create a *Cucumbers* component and a *Kale* component
-* Use these two new components inside your *GroceryList* component instead of the hardcoded <li>s
+* Use these two new components inside your *GroceryList* component instead of the hardcoded *li's*
 
 **Component Properties aka "props"**
 
